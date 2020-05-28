@@ -12,7 +12,7 @@ cp -r ./terraform/ ./temp/
 cd temp
 
 rm -rf .git .gitignore
-COPYFILE_DISABLE=1 tar czfv ibmenterprisecatalog.tgz enterprisecatalog/
+COPYFILE_DISABLE=1 tar czfv ibmenterprisecatalog.tgz enterprisecatalog-private/
 
 
 mv *.tgz ../tgz
