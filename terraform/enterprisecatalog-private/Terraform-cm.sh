@@ -37,7 +37,7 @@ else
 
     # 4. Create a Private catalog
 
-    ibmcloud catalog create --name ${CATALOG_NAME} --description {CATALOG_DESC} hide-ibm-public-catalog
+    ibmcloud catalog create --name ${CATALOG_NAME} --description ${CATALOG_DESC} hide-ibm-public-catalog
 
     # 5. Create a Tile. You need to pass .tgz file as an argument.
 
