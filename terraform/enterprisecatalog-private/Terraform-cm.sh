@@ -23,7 +23,7 @@ else
 
     # 2. Install the plugin
 
-    ibmcloud plugin install catalogs-management
+    #ibmcloud plugin install catalogs-management
 
     #ibmcloud plugin show catalogs-management
 
@@ -39,10 +39,10 @@ else
 
     ibmcloud catalog create --name ${CATALOG_NAME} --description ${CATALOG_DESC} hide-ibm-public-catalog
 
-    # 5. Create a Tile. You need to pass .tgz file as an argument.
+    #  You need to pass .tgz file as an argument.
 
     #  ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl https://github.com/GandhiCloudLab/sandbox-iam-catalogs/blob/master/tgz/AccessGroup-AccessPolicies-0.0.1.tgz
-     ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${githuburl1}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${githuburl1}
 
     ibmcloud catalog offerings --catalog ${CATALOG_NAME}
 
