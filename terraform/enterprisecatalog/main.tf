@@ -1,4 +1,4 @@
- resource "null_resource" "enterprisecatalog" {
+ resource "null_resource" "enterprisecatalog_private" {
 
   provisioner "local-exec" {
      command = "./Terraform-cm.sh '${var.catalog_name}' '${var.catalog_description}' '${var.resource_group}' '${var.region}' '${var.apikey}' '${var.accessgroup_giturl}' "
