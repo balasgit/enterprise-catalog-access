@@ -25,7 +25,7 @@ variable "apikey" {
   description = "Provide the IBMCloud access APIkey"
 }
 
-variable "githuburl1" {
+variable "accessgroup_giturl" {
   type        = "string"
-  description = "Provide the GITHUB URL1 of the tiles which you want load in private catalog"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
 }
