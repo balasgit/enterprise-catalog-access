@@ -33,7 +33,7 @@ else
 
     # 3. Set your target resource group.
 
-    ibmcloud target -g Default
+    ibmcloud target -g ${resource_group}
 
     # 4. Create a Private catalog
 
