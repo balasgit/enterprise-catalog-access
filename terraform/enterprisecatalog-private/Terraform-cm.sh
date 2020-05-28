@@ -23,7 +23,7 @@ else
 
     # 2. Install the plugin
 
-    #ibmcloud plugin install catalogs-management
+    ibmcloud plugin install catalogs-management
 
     #ibmcloud plugin show catalogs-management
 
