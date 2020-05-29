@@ -33,3 +33,37 @@ variable "accessgroup_giturl" {
   description = "Provide the Access Group GITHUB URL which you want add in private catalog"
   default       = "https://github.com/GandhiCloudLab/sandbox-iam-catalogs/blob/master/tgz/AccessGroup-AccessPolicies-0.0.1.tgz"
 }
+
+variable "resourcegroup_giturl" {
+  type        = "string"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
+  default       = "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/ResourceGroup-0.0.1.tgz"
+}
+
+variable "toolkit_giturl" {
+  type        = "string"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
+  default       = "https://github.com/ibm-garage-cloud/cloudnative-toolkit/archive/0.0.21.tar.gz"
+}
+variable "inviteusers_giturl" {
+  type        = "string"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
+  default       = "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/InviteUsersToCloudAccount-0.0.1.tgz"
+}
+variable "assignusersag_giturl" {
+  type        = "string"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
+  default       = "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/AssignUsersToAccessGroup-0.0.1.tgz"
+}
+
+variable "cm_giturl" {
+  type        = "string"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
+  default       = "https://github.com/MuthuSundaravadivel/ibm-gsi-sandbox-cloud-managed-services/blob/master/tgz/cloud-managed-services-0.0.1.tgz"
+}
+
+variable "litesvc_giturl" {
+  type        = "string"
+  description = "Provide the Access Group GITHUB URL which you want add in private catalog"
+  default       = "https://github.com/balassree/ibm-cloud-private-catalog-tiles/blob/master/tgz/ibmcloudlite.tgz"
+}
