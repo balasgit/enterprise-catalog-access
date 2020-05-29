@@ -31,11 +31,11 @@ if [[ ${apikey} == "" ]]; then
 else 
     # 1. The catalog managment is available in latest cli. You need to update your ibmcloud cli using.
 
-   # ibmcloud update
+   ibmcloud update
 
     # 2. Install the plugin
 
-    #ibmcloud plugin install catalogs-management
+    ibmcloud plugin install catalogs-management
 
     #ibmcloud plugin show catalogs-management
 
