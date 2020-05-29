@@ -59,7 +59,7 @@ else
 
     ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Inviteusersurl}
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${AccessGroupurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Toolkiturl}
 
     ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${AssignuserAGurl}
 
