@@ -50,9 +50,6 @@ else
 
     # 4. Create a Private catalog
 
-    echo "Catalog NAME :" ${CATALOG_NAME} ":"
-     echo "Catalog DESC :" ${CATALOG_DESC} ":"
-
     ibmcloud catalog create --name "${CATALOG_NAME}" --description "${CATALOG_DESC}" hide-ibm-public-catalog
 
     #  Add Products to Catalog
