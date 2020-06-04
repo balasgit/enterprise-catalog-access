@@ -52,19 +52,19 @@ else
 
     #  Add Products to Catalog
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${AccessGroupurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/GandhiCloudLab/sandbox-iam-catalogs/blob/master/tgz/AccessGroup-AccessPolicies-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${ResourceGroupurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/ResourceGroup-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Inviteusersurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/InviteUsersToCloudAccount-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Toolkiturl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/ibm-garage-cloud/cloudnative-toolkit/archive/0.0.21.tar.gz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${AssignuserAGurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/AssignUsersToAccessGroup-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${CMurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/MuthuSundaravadivel/ibm-gsi-sandbox-cloud-managed-services/blob/master/tgz/cloud-managed-services-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Liteurl}
+    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/balassree/ibm-cloud-private-catalog-tiles/blob/master/tgz/ibmcloudlite.tgz"
 
 
     #List the Offerings
