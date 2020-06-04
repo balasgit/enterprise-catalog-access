@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ## Assigning values to the parameters from the terraform invocation
 CATALOG_NAME="$1"
 echo "Private Catalog Name:" ${CATALOG_NAME}
@@ -65,6 +67,7 @@ else
     ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/MuthuSundaravadivel/ibm-gsi-sandbox-cloud-managed-services/blob/master/tgz/cloud-managed-services-0.0.1.tgz"
 
     ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/balassree/ibm-cloud-private-catalog-tiles/blob/master/tgz/ibmcloudlite.tgz"
+
 
 
     #List the Offerings
