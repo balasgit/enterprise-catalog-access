@@ -27,7 +27,7 @@ Liteurl="$12"
 echo "Private Catalog Lite Services - Github URL:" ${Liteurl}
 
 ## Check whether API key for cli access to the IBM Cloud is available or not
-if [[ ${apikey} == "" ]]; then
+if [[ "${apikey}" == "" ]]; then
     echo "APIKey missing"
 else 
     # 1. The catalog managment is available in latest cli. You need to update your ibmcloud cli using.
@@ -41,7 +41,7 @@ else
     #ibmcloud plugin show catalogs-management
 
     ## Logging into the IBM Cloud using the parameters from the terraform
-    ibmcloud login  --apikey ${apikey} -g ${resource_group} -r ${region}
+    ibmcloud login  --apikey "${apikey}" -g "${resource_group}" -r "${region}"
     echo "Logged in Successfully"
 
     # 3. Set your target resource group.
