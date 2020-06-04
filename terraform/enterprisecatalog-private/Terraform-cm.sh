@@ -55,27 +55,25 @@ else
 
     ibmcloud catalog create --name "${CATALOG_NAME}" --description "${CATALOG_DESC}" hide-ibm-public-catalog
 
-    ibmcloud catalog create --name "11" --description "12" hide-ibm-public-catalog
-
     #  Add Products to Catalog
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${AccessGroupurl} 
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${AccessGroupurl}"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${ResourceGroupurl}
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${ResourceGroupurl}"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Inviteusersurl}
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${Inviteusersurl}"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Toolkiturl}
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${Toolkiturl}"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${AssignuserAGurl}
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${AssignuserAGurl}"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${CMurl}
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${CMurl}"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Liteurl}
+    ibmcloud catalog offering create --catalog "${CATALOG_NAME}" --zipurl "${Liteurl}"
 
 
     #List the Offerings
-    ibmcloud catalog offerings --catalog ${CATALOG_NAME}
+    ibmcloud catalog offerings --catalog "${CATALOG_NAME}"
 
     # 6. In the ibm cloud webconsole, choose Manage > Catalogs to the created private catalog and tile.
 
