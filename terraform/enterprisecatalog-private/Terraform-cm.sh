@@ -25,7 +25,7 @@ Liteurl="$12"
 echo "Private Catalog Lite Services - Github URL:" ${Liteurl}
 
 ## Check whether API key for cli access to the IBM Cloud is available or not
-if [[ ${apikey} == "" ]]; then
+if [[ $apikey == "" ]]; then
     echo "APIKey missing"
 else 
     # 1. The catalog managment is available in latest cli. You need to update your ibmcloud cli using.
@@ -39,32 +39,32 @@ else
     #ibmcloud plugin show catalogs-management
 
     ## Logging into the IBM Cloud using the parameters from the terraform
-    ibmcloud login  --apikey ${apikey} -g ${resource_group} -r ${region}
+    ibmcloud login  --apikey $apikey -g $resource_group -r $region
     echo "Logged in Successfully"
 
     # 3. Set your target resource group.
 
-    ibmcloud target -g ${resource_group}
+    ibmcloud target -g $resource_group
 
     # 4. Create a Private catalog
 
-    ibmcloud catalog create --name ${CATALOG_NAME} --description ${CATALOG_DESC} hide-ibm-public-catalog
+    ibmcloud catalog create --name $CATALOG_NAME --description $CATALOG_DESC hide-ibm-public-catalog
 
     #  Add Products to Catalog
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/GandhiCloudLab/sandbox-iam-catalogs/blob/master/tgz/AccessGroup-AccessPolicies-0.0.1.tgz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/GandhiCloudLab/sandbox-iam-catalogs/blob/master/tgz/AccessGroup-AccessPolicies-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/ResourceGroup-0.0.1.tgz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/ResourceGroup-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/InviteUsersToCloudAccount-0.0.1.tgz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/InviteUsersToCloudAccount-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/ibm-garage-cloud/cloudnative-toolkit/archive/0.0.21.tar.gz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/ibm-garage-cloud/cloudnative-toolkit/archive/0.0.21.tar.gz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/AssignUsersToAccessGroup-0.0.1.tgz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/diimallya/sandbox-iam-catalogs/blob/master/tgz/AssignUsersToAccessGroup-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/MuthuSundaravadivel/ibm-gsi-sandbox-cloud-managed-services/blob/master/tgz/cloud-managed-services-0.0.1.tgz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/MuthuSundaravadivel/ibm-gsi-sandbox-cloud-managed-services/blob/master/tgz/cloud-managed-services-0.0.1.tgz"
 
-    ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl "https://github.com/balassree/ibm-cloud-private-catalog-tiles/blob/master/tgz/ibmcloudlite.tgz"
+    ibmcloud catalog offering create --catalog $CATALOG_NAME --zipurl "https://github.com/balassree/ibm-cloud-private-catalog-tiles/blob/master/tgz/ibmcloudlite.tgz"
 
 
     #List the Offerings
