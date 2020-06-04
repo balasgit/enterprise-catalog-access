@@ -55,7 +55,7 @@ else
 
     ibmcloud catalog create --name "${CATALOG_NAME}" --description "${CATALOG_DESC}" hide-ibm-public-catalog
 
-    ibmcloud catalog create --name "$1" --description "$2" hide-ibm-public-catalog
+    ibmcloud catalog create --name "11" --description "12" hide-ibm-public-catalog
 
     #  Add Products to Catalog
 
