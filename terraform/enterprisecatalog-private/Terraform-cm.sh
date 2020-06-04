@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 ## Assigning values to the parameters from the terraform invocation
 CATALOG_NAME="$1"
