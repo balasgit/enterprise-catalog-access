@@ -26,7 +26,6 @@ echo "Private Catalog Lite Services - Github URL:" ${Liteurl}
 
 ## Check whether API key for cli access to the IBM Cloud is available or not
 if [[ ${apikey} == "" ]]; then
-
     echo "APIKey missing"
 else 
     # 1. The catalog managment is available in latest cli. You need to update your ibmcloud cli using.
@@ -66,6 +65,7 @@ else
     ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${CMurl}
 
     ibmcloud catalog offering create --catalog ${CATALOG_NAME} --zipurl ${Liteurl}
+
 
     #List the Offerings
     ibmcloud catalog offerings --catalog ${CATALOG_NAME}
